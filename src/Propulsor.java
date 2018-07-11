@@ -1,26 +1,23 @@
-import java.util.ArrayList;
-import java.util.List;
 
 public class Propulsor {
         private int potencia;
-        private int potenciamax;
-        public Propulsor(int potenciamax) throws Exception {
-        	if (potenciamax<=0) throw new Exception("Potencia not valid");
-                this.potenciamax=potenciamax;
+        private int potenciaMax;
+        public Propulsor(int potenciaMax) throws Exception {
+        	if (potenciaMax<=0) throw new Exception("Potencia not valid");
+                this.potenciaMax=potenciaMax;
         }
 
         public int getPotencia() {
-			return potencia;
-		}
+			return potencia;		}
         
         public int getPotenciamax() {
-			return potenciamax;
+			return potenciaMax;
 		}
 
 		public void canvipotencia(int canvi) {
         	potencia+=canvi;
-        	if (potencia >potenciamax) {potencia=potenciamax;}
+        	if (potencia >potenciaMax) {potencia=potenciaMax;}
         	else if (potencia <0) {potencia=0;}		
-        			}
+        }
         	
 }

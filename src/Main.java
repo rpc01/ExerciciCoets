@@ -21,8 +21,6 @@
 // Mostrar a pantalla la velocitat actual
 
 
-
-
 public class Main {
         public static void main(String[] args) {
         Coet coet1;
@@ -34,7 +32,7 @@ public class Main {
 			coet1.addPropulsor(80);
 			
 			coet2 = new Coet("LDSFJA32");
-			coet2.addPropulsor(10);
+			coet2.addPropulsor(30);
 			coet2.addPropulsor(40);
 			coet2.addPropulsor(50);
 			coet2.addPropulsor(50);
@@ -62,11 +60,9 @@ public class Main {
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		} finally {}
-       	         
-       
-       
-	
+		} 
+             
+              	
 	}
         public static void print(Coet coet, String text) {System.out.println(        		
         		" coet: "+coet.getCodi()+
